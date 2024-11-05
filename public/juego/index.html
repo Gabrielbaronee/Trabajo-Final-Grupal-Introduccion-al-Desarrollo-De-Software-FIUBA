@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    
+    <title>Ta-Te-Ti</title>
+    <link rel="stylesheet" href="../styles/layout/header.css">
+    <link rel="stylesheet" href="../styles/pages/juego/juego.css">
+    <link rel="stylesheet" href="../styles/layout/footer.css">
+
+</head>
+<body onload="agregarCirculo('O')">
+    <header class="Header">
+        <section>
+            <article>
+                <h1>Sala de videojuegos</h1>
+            </article>
+            <article>
+                <nav>
+                    <li><a class="link" onclick="confirmarVolver()">Volver</a></li>
+                    <li><a class="link" onclick="irAPagina('perfil')">Perfil</a></li>
+                    <li><a class="link" onclick="irAPagina('estadisticas')">Estadisticas</a></li>
+                </nav>
+            </article>
+        </section>
+    </header>
+    <main>
+        <section>
+
+            <main id="partida">
+               <article>
+                    <h4 id="nombre-juego">Ta-Te-Ti</h4>
+                    <button id="botonPartida" onclick="nuevaPartida(); crearNuevaPartida();">Nueva Partida</button>
+               </article>
+            
+               <div id="partida_en_curso">
+                   
+                   <!--Aca se va a cargar la partida-->
+                </div>
+            </main>
+            <div id="resultado"></div>    
+            
+        </section>
+    </main>
+
+    <aside></aside>
+    
+    <footer>
+        <img src="../styles/media/images/estrellas.webp" alt="">
+    </footer>
+
+    <script src="../scripts/inicializar_juego_back.js"></script>
+    <script src="./js/funcionalidades.js"></script>
+    <script src="./js/juego.js"></script>
+</body>
+</html>

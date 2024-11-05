@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../styles/layout/header.css">
+    <link rel="stylesheet" href="../styles/pages/perfil/perfil.css">
+
+    
+    <title>Perfil</title>
+</head>
+<body>
+    <header class="Header">
+        <section>
+            <article>
+                <h1>PERFIL</h1>
+            </article>
+            <article>
+                <nav>
+                    <li><a class="link" href="../juego/index.html">Volver</a></li>
+                    <li><a class="link" href="../index.html">Inicio</a></li>
+                    <li><a class="link" href="../estadisticas/index.html">Estadisticas</a></li>
+                </nav>
+            </article>
+    </header>
+    <main>
+        <article class="card">
+            <h2>Perfil</h2>
+            <ul id="info"></ul>
+        </article>
+        <section id="login-section">
+            <article class="card">
+                <h2>Cambiar Contraseña</h2>
+                <div class="form">
+                    <form id="login-form">
+                        <label for="login-password">Nueva Contraseña:</label>
+                        <input type="password" id="login-password" name="password" required>
+                        <button type="submit">Modificar Contraseña</button>
+                    </form>
+                    <div id="login-message"></div>
+                </div>
+            </article>
+        </section>
+        <button id="borrarCuenta" onclick="borrarCuenta()">Borrar Cuenta</button>
+    </main>
+    <aside>
+       
+    </aside>
+    <footer>
+        
+    </footer>
+
+    <script src="./js/perfil.js"></script>
+</body>
+</html>

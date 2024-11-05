@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles/layout/header.css">
+    <link rel="stylesheet" href="./styles/pages/home/home.css">
+   
+
+    <title>Inicio</title>
+</head>
+<body>
+    <header class="Header">
+        <section>
+            <article>
+                <h1>El Triangulo de las Bermudas</h1>
+            </article>
+        </section>
+    </header>
+    <main>
+        <!-- Formulario de Login -->
+        <section id="login-section">
+            <article class="card">
+                <h2>Inicio de Sesion</h2>
+                <div class="form">
+                    <form id="login-form">
+                        
+                        <label for="login-username">Usuario:</label>
+                        <input type="text" id="login-username" name="username" required>
+                        <label for="login-password">Contraseña:</label>
+                        <input type="password" id="login-password" name="password" required>
+                        <button type="submit">Iniciar sesión</button>
+                    </form>
+                    <div id="login-message"></div>
+                </div>
+            </article>
+            
+
+        </section>
+
+        <!-- Formulario de Signup -->
+        <section id="signup-section">
+            <article class="card">
+                <h2>Registro</h2>
+                <div class="form">
+                    <form id="signup-form">
+                        <label for="signup-username">Usuario:</label>
+                        <input type="text" id="signup-username" name="username" required>
+                        <label for="signup-password">Contraseña:</label>
+                        <input type="password" id="signup-password" name="password" required>
+                        <button type="submit">Registrarse</button>
+                    </form>
+                    <div id="signup-message"></div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+ 
+    <footer>
+        
+    </footer>
+
+    <script src="./scripts/login.js"></script>
+</body>
+</html>
